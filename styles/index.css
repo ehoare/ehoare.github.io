@@ -1,0 +1,555 @@
+@font-face {
+  font-family: Matrix;
+  src: url("../fonts/matrix.ttf");
+}
+@font-face {
+  font-family: Anurati;
+  src: url("../fonts/Anurati-Regular.ttf");
+}
+/* >>>>>>>>>>>>>>>>>>>>>> UTILITY CSS >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.p0 {
+  padding: 0 !important;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.mx10 {
+  margin: 0px 10px !important;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.align-left {
+  float: left !important;
+}
+
+.align-right {
+  float: right !important;
+}
+
+.custom-btn {
+  color: #fff;
+  border-radius: 5px;
+  font-size: 23px;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 0px 1px 0px rgb(255, 255, 255), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: 1px solid #ba6;
+  z-index: 2;
+}
+
+.form-btn {
+  border-color: #7c7c7c;
+  background-image: -webkit-repeating-linear-gradient(left, hsla(0deg, 0%, 100%, 0) 0%, hsla(0deg, 0%, 100%, 0) 6%, hsla(0deg, 0%, 100%, 0.1) 7.5%), -webkit-repeating-linear-gradient(left, hsla(0deg, 0%, 0%, 0) 0%, hsla(0deg, 0%, 0%, 0) 4%, hsla(0deg, 0%, 0%, 0.03) 4.5%), -webkit-repeating-linear-gradient(left, hsla(0deg, 0%, 100%, 0) 0%, hsla(0deg, 0%, 100%, 0) 1.2%, hsla(0deg, 0%, 100%, 0.15) 2.2%), linear-gradient(180deg, hsl(0deg, 0%, 78%) 0%, hsl(0deg, 0%, 90%) 47%, hsl(0deg, 0%, 78%) 53%, hsl(0deg, 0%, 70%) 100%);
+}
+
+.custom-btn:active {
+  transform: translateY(2px);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>> UTILITY CSS END>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.container {
+  max-width: none !important;
+  height: 134px;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 23px -4px #000000;
+  transition: 1s;
+}
+
+#myVideo {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: Anurati;
+  height: 134px;
+  font-size: 34px;
+  color: #fff;
+  padding: 45px 0;
+  z-index: 1;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  background: #000;
+  text-align: center;
+  width: 100%;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: inline-block;
+}
+
+.open {
+  height: 600px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.hero-img-container {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-img {
+  -webkit-animation: fadeIn ease-in 0.5s;
+          animation: fadeIn ease-in 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.hero-img :hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #0f0;
+}
+
+.neo, .trinity, .morpheus, .bugs {
+  transition: transform 0.2s;
+}
+
+.img-animation {
+  transform: scale(1.2);
+  opacity: 1 !important;
+}
+
+.hero-img h4 {
+  font-family: Matrix;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#quoteText {
+  font-family: Matrix;
+  color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 900px;
+  background: transparent;
+  opacity: 1;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>> CAROUSEL CSS >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#carousel {
+  margin-top: 100px;
+}
+
+.carousel-text-container-right {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+.carousel-text-container-left {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.carousel-title {
+  font-family: Anurati;
+  font-size: 4rem;
+}
+
+.carousel-subtitle-right {
+  font-family: Anurati;
+  text-align: right;
+}
+
+.carousel-subtitle-left {
+  font-family: Anurati;
+  text-align: left;
+}
+
+/* >>>>>>>>>>>>>>>>>>> SWIPER CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#product-swiper {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.matrix-swiper img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-slide h4 {
+  font-family: Matrix;
+  text-align: center;
+  position: relative;
+}
+
+.swiper-slide p {
+  text-align: center;
+  position: relative;
+}
+
+.swiper-slide:hover > .slide-img {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+}
+
+.agregar-btn {
+  font-family: Anurati;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 33%;
+}
+
+/* >>>>>>>>>>>>>>>>>>> CARRITO DESPLEGABLE >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/******* clases para sobreescribir bootstrap modal *****/
+.carrito-desplegable {
+  position: absolute !important;
+  width: 25% !important;
+  min-height: 100vh;
+  padding-right: 0 !important;
+  left: auto !important;
+  right: 0;
+  top: 0 !important;
+  margin: 0 !important;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+  min-height: 100vh;
+}
+
+.modal-open {
+  overflow: auto !important;
+  overflow-y: scroll !important;
+  padding: 0 !important;
+}
+
+.modal.fade:not(.in).right .modal-dialog {
+  transform: translate3d(0, 0, 0);
+}
+
+/******* clases para resto *****/
+.plusminus {
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 30px;
+  height: 90px;
+}
+.plusminus button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #000;
+  color: #fff;
+  font-size: 21px;
+  line-height: 1;
+  font-family: bonds, sans-serif;
+  cursor: pointer;
+}
+.plusminus button:focus {
+  outline: none;
+  color: #ff6367;
+}
+.plusminus button:disabled {
+  background: #999;
+  color: #ccc;
+  cursor: default;
+}
+.plusminus button:first-child {
+  bottom: 0;
+}
+.plusminus button:first-child:before {
+  vertical-align: text-top;
+  content: "-";
+}
+.plusminus button:last-child {
+  top: 0;
+}
+.plusminus button:last-child:before {
+  vertical-align: text-top;
+  content: "+";
+}
+.plusminus button:last-child:focus {
+  color: #2bebaf;
+}
+.plusminus input {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 30px;
+  margin: 0;
+  padding: 0 0 11.5384615385px;
+  border: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+.plusminus input::-webkit-outer-spin-button, .plusminus input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.plusminus:after {
+  content: "QTY";
+  position: absolute;
+  font-size: 6.6px;
+  left: 0;
+  right: 0;
+  line-height: 1;
+  padding: 2.4px 0 2.4px 0;
+  width: 30px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  color: #888;
+  text-align: center;
+  bottom: 34%;
+}
+.plusminus.horiz {
+  width: 90px;
+  height: 30px;
+}
+.plusminus.horiz button:first-child {
+  left: 0;
+}
+.plusminus.horiz button:last-child {
+  right: 0;
+}
+.plusminus.horiz:after {
+  bottom: 0;
+}
+.plusminus.horiz input {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.separator {
+  border-top: 1px solid #000;
+}
+
+.cart-product-container {
+  border-top: 2px solid #000;
+  padding-top: 50px;
+  max-height: 683px;
+  overflow-y: hidden;
+}
+
+.cart-item {
+  margin-top: 20px;
+}
+
+.cart-product-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: right;
+  width: 80%;
+}
+
+.cart-product-text > h4 {
+  font-size: 20px;
+}
+
+.cart-product-text > p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.cart-product-img {
+  width: 50%;
+}
+
+.cart-title {
+  font-family: Anurati;
+  font-size: 30px;
+}
+
+.cart-total {
+  position: absolute;
+  bottom: 115px;
+  left: 46px;
+}
+
+.cart-total > h4 {
+  display: inline-block;
+}
+
+.cart-total > p {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.seguir-btn {
+  font-family: Anurati;
+  position: absolute;
+  bottom: 9%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* >>>>>>>>>>>>>>>>>>> CHECKOUT MODAL >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#checkout-modal .modal-body {
+  background-image: url("/Media/metal-background.jpg");
+  opacity: 88%;
+}
+#checkout-modal h2 {
+  font-family: Anurati;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+#checkout-form input {
+  margin-bottom: 36px;
+}
+#checkout-form .shipping-select {
+  padding-left: 10px !important;
+}
+#checkout-form .payment-select {
+  padding-right: 10px !important;
+}
+#checkout-form button {
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  padding: 7px 99px;
+  border-radius: 5px;
+}
+
+.checkout {
+  position: absolute !important;
+  max-width: 1200px !important;
+  width: 1200px !important;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%) !important;
+  margin: 0 !important;
+  padding-right: 0px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 6px 3px 10px 0px;
+}
+.checkout .modal-content {
+  min-height: 500px;
+  border-radius: 6px !important;
+}
+
+.checkout-product-container {
+  background-color: #fff;
+  height: 400px;
+  padding: 23px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: inset rgba(0, 0, 0, 0.24) 5px 1px 6px 4px;
+}
+.checkout-product-container .checkout-product-img {
+  width: 50%;
+}
+.checkout-product-container .checkout-item {
+  position: relative;
+  padding: 0 !important;
+}
+.checkout-product-container .checkout-item h4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  margin: 0;
+}
+.checkout-product-container .checkout-item p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  margin: 0;
+}
+
+.checkout-total {
+  color: #fff !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+}
+.checkout-total h4 {
+  display: inline-block;
+  margin-right: 15px;
+}
+.checkout-total p {
+  display: inline-block;
+}/*# sourceMappingURL=index.css.map */

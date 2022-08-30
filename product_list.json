@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Neo Shirt",
+    "imagen": "./Media/product_images/neo-shirt.jpg",
+    "precio": 14999,
+    "disponible": true,
+    "stock": 5,
+    "id": "producto1"
+  },
+  {
+    "nombre": "Bunny Shirt",
+    "imagen": "./Media/product_images/random-shirt-1.jpg",
+    "precio": 13999,
+    "disponible": true,
+    "stock": 7,
+    "id": "producto2"
+  },
+  {
+    "nombre": "Blanket",
+    "imagen": "./Media/product_images/blanket.jpg",
+    "precio": 10999,
+    "disponible": true,
+    "stock": 3,
+    "id": "producto3"
+  },
+  {
+    "nombre": "Mug",
+    "imagen": "./Media/product_images/mug.jpg",
+    "precio": 6999,
+    "disponible": true,
+    "stock": 8,
+    "id": "producto4"
+  },
+  {
+    "nombre": "Shades",
+    "imagen": "./Media/product_images/glasses.jpg",
+    "precio": 12999,
+    "disponible": true,
+    "stock": 10,
+    "id": "producto5"
+  }
+]
