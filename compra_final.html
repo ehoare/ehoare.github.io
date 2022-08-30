@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="results"></div>
+
+  <script>
+    // >>>>>>>>>>>>>>>>>>>>>> RENDER RESULTS TO NEW PAGE >>>>>>>>>>>>>>>>>>>>>>>
+    const compraFinal = document.getElementById('results');
+
+    function retrieveFromLocalStorage(){
+      const retrieveCart = JSON.parse(localStorage.getItem("productList"))
+      for (const objeto of retrieveCart)
+        compraFinal.insertAdjacentHTML("afterbegin",
+          '<p>Producto:'+objeto.nombre+' - Id: '+objeto.id+' - Cantidad: 1 - Precio Unitario: '+objeto.precio+'</p>'
+        );
+    }
+
+    retrieveFromLocalStorage()
+
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+      compraFinal.append(`${name}: ${value}`);
+      compraFinal.append(document.createElement('br'));
+      compraFinal.append(document.createElement('br'));
+    })
+
+    compraFinal.insertAdjacentHTML("beforeend",
+      '<a href="/">Back to Home</a>'
+    );
+  </script>
+</body>
+</html>

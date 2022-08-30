@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/47a72e46b5.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+  </head>
+
+  <body>
+    <section id="header">
+      <img src="./Media/matrix-logo.jpg" alt="logo">
+      <div class="right-menu">
+        <i class="fa-solid fa-cart-arrow-down" data-toggle="modal" data-target="#cart-modal"></i>
+      </div>
+    </section>
+    <section id="carousel">
+      <div id="matrix-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-text-container-right">
+              <h1 class="carousel-title">DARE TO EXPERIENCE</h1>
+              <h4 class="carousel-subtitle-right">FUTURE OF FASHION</h4>
+            </div>
+            <img class="d-block w-100" src="./Media/swiper-1.jpeg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-text-container-right">
+              <h1 class="carousel-title">BREAK THE MOLD</h1>
+              <h4 class="carousel-subtitle-right">DON'T SETTLE</h4>
+            </div>
+            <img class="d-block w-100" src="./Media/swiper-2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-text-container-left white align-left">
+              <h1 class="carousel-title">GIVE IN TO YOUR INNER REBEL</h1>
+              <h4 class="carousel-subtitle-left">IGNORE THE STATUS-QUO</h4>
+            </div>
+            <img class="d-block w-100" src="./Media/swiper-3.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container p0">
+      <div class="title">
+        <span>CHOOSE YOUR HERO</span>
+      </div>
+      <video autoplay muted loop id="myVideo">
+        <source src="./Media/matrix.mp4" type="video/mp4">
+      </video>
+      <div class="hero-img-container">
+        <div class="row">
+          <div class="col-3">
+            <div class="hero-img mx10 neo" id="img1">
+              <img src="./Media/first.jpeg" alt="">
+              <h4>NEO</h4>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="hero-img trinity mx10" id="img2">
+              <img src="./Media/second.jpeg" alt="Trinity">
+              <h4>TRINITY</h4>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="hero-img morpheus mx10" id="img3">
+              <img src="./Media/third.jpeg" alt="morpheus">
+              <h4>MORPHEUS</h4>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="hero-img bugs mx10" id="img4">
+              <img src="./Media/fourth.jpeg" alt="bugs">
+              <h4>BUGS</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="quoteText"></p>
+      <div id="villain">
+        <img src="./Media/fifth.jpg" alt="villain">
+      </div>
+    </div>
+    <section id="product-swiper">
+      <div class="matrix-swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" id="producto1"></div>
+            <div class="swiper-slide" id="producto2"></div>
+            <div class="swiper-slide" id="producto3"></div>
+            <div class="swiper-slide" id="producto4"></div>
+            <div class="swiper-slide" id="producto5"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="modal fade right" id="cart-modal">
+      <div class="modal-dialog carrito-desplegable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="cart-title">CARRITO</h2>
+            <div class="cart-product-container">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade right" id="checkout-modal">
+      <div class="modal-dialog checkout">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="checkout-title">CHECKOUT</h2>
+            <div class="row m0">
+              <div class="col-6 checkout-product-container">
+              </div>
+              <div class="col-6 checkout-payment-container">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <script>
+      const matrixSwiper = new Swiper('.swiper-container', {
+        initialSlide: 0,
+        slidesPerGroup: 1,
+        slidesPerView: 4.6,
+        spaceBetween: 25,
+        allowTouchMove: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
